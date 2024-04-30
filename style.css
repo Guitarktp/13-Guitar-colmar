@@ -13,8 +13,8 @@
   --base-100: #f1f1f1;
   --yellow: #ffda4b;
   --yellow-100: #fffbe6;
-  --blue: #0a61ae;
-  --blue-100: #e2f8ff;
+  --blue: #cfc45d;
+  --blue-100: #cfc45d;
 }
 
 h1 {
@@ -35,10 +35,10 @@ body {
 }
 
 header {
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 10px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   max-width: auto;
   margin: auto;
   border-bottom: 1px solid;
@@ -96,35 +96,13 @@ header {
     }
   } */
 
-  /* @media (max-width: 1024px) {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  @media (max-width: 768px) {
-    nav {
-      width: 100%;
-      ul {
-        display: none;
-        flex-direction: column;
-        text-align: center;
-        width: 100%;
-        padding: 0 20px;
-        a {
-          width: 100%;
-        }
-        &.active {
-          display: flex;
-        }
-      }
-    }
-  }
-} */
+ 
 
 
 
-/* section {
-    max-width: 1440px;
+
+section {
+    max-width: auto;
     margin: auto;
     gap: 30px;
     margin-top: 30px;
@@ -153,4 +131,27 @@ header {
       justify-content: center;
       flex: 1;
     }
-  } */
+  }
+
+  .hero {
+    background-color: var(--blue-100);
+    .hero-first {
+      padding: 30px;
+      .call-to-action {
+        margin-top: 0px;
+        margin-bottom: 10px;
+        a {
+          margin-right: 10px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .hero-second {
+      padding: 0px 30px;
+      img {
+        object-fit: cover;
+      }
+    }
+  }
+  
+  
